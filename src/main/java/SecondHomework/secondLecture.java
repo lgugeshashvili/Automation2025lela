@@ -1,3 +1,5 @@
+package SecondHomework;
+
 public class secondLecture {
     public static void main(String[] args) {
 //ამოცანა 1; პირველი ვარიანტი, დამატებული ცვლადით
