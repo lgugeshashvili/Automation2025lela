@@ -1,10 +1,20 @@
 package SixthHomework;
 
+import java.util.Scanner;
+
 public class Triangle {
     double side1, side2, side3;
     boolean isValid;
 
-    public Triangle(double side1, double side2, double side3) {
+    public Triangle() {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("გთხოვთ შეიყვანეთ პირველი გვერდის სიგრძე");
+        double side1= scanner.nextInt();
+        System.out.println("გთხოვთ შეიყვანეთ მეორე გვერდის სიგრძე");
+        double side2=scanner.nextInt();
+        System.out.println("გთხოვთ შეიყვანეთ მესამე გვერდის სიგრძე");
+        double side3=scanner.nextInt();
+
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -18,7 +28,7 @@ public class Triangle {
                 side2 + side3 > side1;
     }
 
-    // მეთოდი პერიმეტრის გამოსათვლელად
+
     public double getPerimeter() {
         if (!isValid) {
             return -1;

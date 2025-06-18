@@ -9,14 +9,10 @@ public class Runner {
 cat.meow();
 cat.eat();
 
-/*
 
-        Triangle t1 = new Triangle(3, 4, 5);
+        Triangle t1 = new Triangle();
         System.out.println("პერიმეტრი: " + t1.getPerimeter());
         System.out.println("ფართობი: " + t1.getArea());
-
-        Triangle t2 = new Triangle(1, 2, 10);
-        System.out.println("ფართობი: " + t2.getArea()); */
 
 
     }
