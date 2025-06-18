@@ -1,21 +1,33 @@
 package SixthHomework;
 
+import java.util.Scanner;
+
 public class Cat {
     private String saxeli, jishi, sqesi;
     private int asaki;
-    private int bitesize = 10; // ← გინდა თუ არა private ველი, ასე უნდა გამოაცხადო
-
+    private int bitesize = 10; //
     public void meow() {
-        System.out.println("meowing...");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("გთხოვთ შეიყვანეთ კატის სახელი:");
+        String name = scanner.nextLine();
+        System.out.println("კატის სახელი: " + name);
+        System.out.println(name+"-ს ხმა:   meowing...");
     }
 
-    // eat მეთოდი, რომელიც აბრუნებს ლუკმების რაოდენობას
-    public int eat(int grams) {
+
+    public int eat() {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("გთხოვთ შეიყვანეთ საკვების რაოდენობა გრამებში");
+        int grams= scanner.nextInt();
+
         int lukmebisRaodenoba = grams / bitesize;
+        System.out.println("კატა ჭამს  "+grams+" გრამს, რაც არის "+(lukmebisRaodenoba+1)+" ლუკმა");
         for (int i = 0; i <= lukmebisRaodenoba; i++) {
             System.out.println("eating...");
         }
         return lukmebisRaodenoba;
+
     }
 
     // Setter-ები
